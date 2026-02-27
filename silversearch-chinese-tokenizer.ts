@@ -1,5 +1,5 @@
 // @deno-types="./jieba-wasm-2.4.0/jieba_rs_wasm.d.ts"
-import initWasm, { cut_for_search, InitOutput } from "./jieba-wasm-2.4.0/jieba_rs_wasm.js";
+import initWasm, { cut_all, cut_for_search, InitOutput } from "./jieba-wasm-2.4.0/jieba_rs_wasm.js";
 
 import { clientStore, space } from "@silverbulletmd/silverbullet/syscalls";
 
@@ -50,5 +50,5 @@ export function isTokenizable(text: string): boolean {
 }
 
 export function tokenize(text: string): string[] {
-  return cut_for_search(text, true).filter(t => !/^[\p{P}\s]+$/u.test(t));
+  return cut_all(text).filter(t => !/^[\p{P}\s]+$/u.test(t));
 }
