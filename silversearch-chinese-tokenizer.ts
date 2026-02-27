@@ -8,7 +8,7 @@ interface Cache {
     data: Uint8Array;
 }
 
-const LIBRARY_PATH = "Library/LelouchHe"
+const LIBRARY_PATH = "Library/Al3cLee"
 const WASM_PATH = `${LIBRARY_PATH}/silversearch-chinese-tokenizer.wasm`
 
 const CACHE_KEY = "silversearch-chinese-tokenizer";
