@@ -50,5 +50,5 @@ export function isTokenizable(text: string): boolean {
 }
 
 export function tokenize(text: string): string[] {
-  return cut_all(text).filter(t => !/^[\p{P}\s]+$/u.test(t));
+  return cut_all(text,true).filter(t => !/^[\p{P}\s]+$/u.test(t));
 }
