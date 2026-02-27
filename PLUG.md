@@ -1,5 +1,5 @@
 ---
-name: Library/LelouchHe/Silversearch-Chinese-Tokenizer
+name: Library/Al3cLee/Silversearch-Chinese-Tokenizer
 tags: meta/library
 files:
 - silversearch-chinese-tokenizer.js
